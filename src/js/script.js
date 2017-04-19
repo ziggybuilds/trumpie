@@ -122,19 +122,19 @@ startBtn.addEventListener('click', (e) => {
 });
 
 resetBtn.addEventListener('click', (e) => {
-    timer.reboot();
-    console.log("clicked");
-    house.setAttribute("datagame", "false");
-    korea.setAttribute("datagame", "false");
-    flag.setAttribute("datagame", "false");
-    earth.setAttribute("datagame", "false");
+        window.location.reload(true);
 });
 
 
-const house = document.querySelector('.house');
-const korea = document.querySelector('.korea');
-const flag = document.querySelector('.flag');
-const earth = document.querySelector('.earth');
+const house = document.querySelector('#whitehouse');
+const korea = document.querySelector('#korea');
+const flag = document.querySelector('#flag');
+const earth = document.querySelector('#earth');
+
+const parenthouse = document.querySelector('#parentHouse');
+const parentkorea = document.querySelector('#parentKorea');
+const parentflag = document.querySelector('#parentFlag');
+const parentearth = document.querySelector('#parentEarth');
 
 const boom = document.createElement("img");
 boom.src = "./images/boom.gif";
@@ -148,29 +148,37 @@ done.setAttribute("class", "done");
         timer.start();
        if(house.hasAttribute("datagame")) {
         house.setAttribute("datagame", "true");
-        gameOver();
         }
+        parentHouse.appendChild(boom);
+        house.style.display = "none";
+        gameOver();
     });
     korea.addEventListener('click', (e) => {
         timer.start();
         if(korea.hasAttribute("datagame")) {
         korea.setAttribute("datagame", "true");
-        gameOver();
         }
+        parentKorea.appendChild(boom);
+        korea.style.display = "none";
+        gameOver();
     });
     earth.addEventListener('click', (e) => {
         timer.start();
         if(earth.hasAttribute("datagame")) {
         earth.setAttribute("datagame", "true");
-        gameOver();
         }
+        parentEarth.appendChild(boom);
+        earth.style.display = "none";
+        gameOver();
     });
     flag.addEventListener('click', (e) => {
         timer.start();
         if(flag.hasAttribute("datagame")) {
         flag.setAttribute("datagame", "true");
-        gameOver();
         }
+        parentFlag.appendChild(boom);
+        flag.style.display = "none";
+        gameOver();
     });
 
 function gameOver() {
@@ -181,15 +189,14 @@ function gameOver() {
         earth.getAttribute("datagame") == "true"
      ) {
             timer.stop();
-
             endMessage();
     }
 }
 
 //// Function to dispaly gameover pop-up
 const score = document.querySelector("#score");
-
-const pop = document.querySelector(".pop-up");
+const title = document.querySelector("#gametitle");
+const pop = document.querySelector(".pop-up-text");
 document.addEventListener('DOMContentLoaded', (e) => {
     pop.style.display = "none";
 });
@@ -199,7 +206,7 @@ function endMessage() {
     
     score.textContent = "Congrats! Donald destroyed the world in: " + counter.textContent;
 
-
+    title.style.zIndex = '12';
     pop.style.display = "block";
 
 
