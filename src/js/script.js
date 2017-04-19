@@ -203,13 +203,12 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 function endMessage() {
     let time = document.querySelector("#counter").textContent;
-    
+    title.style.zIndex = '12';    
     score.textContent = "Congrats! Donald destroyed the world in: " + counter.textContent;
 
-    title.style.zIndex = '12';
-    pop.style.display = "block";
-
-
+    setTimeout(function() {
+        pop.style.display = "block";
+    }, 500);
 }
 
 
