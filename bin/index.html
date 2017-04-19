@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS: Mouse mover</title>
+</head>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" rel="stylesheet">
+<link href="./style.css" rel="stylesheet">
+
+<body>
+	<div class="boundary">
+		<div class="mover" id="moveBox">
+			<img class="trumpie-img" src="./images/trumpie.png" alt="trumpie">
+		</div>
+		<div class="title">
+			<h1><span class="trumpie">TRUMP TIME!</span></h1>
+		</div>
+	</div>
+	<div class="game">
+		<div class="timer">
+			<h3><span class="time-title">How fast can Trump destory it all?!</span></h3>
+			<p class="counter" id="counter"></p>
+			<button id="start">Start</button>
+			<!--<button id="stop">Stop</button>-->
+			<button id="reset">Reset</button>
+		</div>
+	</div>
+	<div class="card-container">
+		
+			<div class="card house" dataGame="false">
+				<img class="icons" src="./images/whitehouse.png" alt="whitehouse">
+			</div>
+			<div class="card korea" dataGame="false">
+				<img class="icons" src="./images/korea.png" alt="korea">
+			</div>
+			<div class="card earth" dataGame="false">
+				<img class="icons" src="./images/earth.png" alt="earth">
+			</div>
+			<div class="card flag" dataGame="false">
+				<img class="icons" src="./images/flag.png" alt="flag">
+			</div>
+
+	</div>
+	<div class="pop-up">
+		<div class="pop-up-text">
+			<h3 id="score"></h3>
+			<button>Twitter</button><button>Facebook</button>
+		</div>
+	</div>
+<script type="text/javascript" src="./app.bundle.js"></script>
+
+</body>
+</html>

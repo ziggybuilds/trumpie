@@ -1,0 +1,32 @@
+{
+  "name": "mousemover",
+  "version": "1.0.0",
+  "description": "JS interactions and Trump mini game",
+  "main": "script.js",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "image-webpack-loader": "^3.3.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "optimize-css-assets-webpack-plugin": "^1.3.1"
+  },
+  "scripts": {
+    "run": "webpack-dev-server --content-base bin/"
+  },
+  "keywords": [
+    "Trump",
+    "JS"
+  ],
+  "author": "Joshua Ellis",
+  "license": "ISC"
+}

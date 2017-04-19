@@ -1,0 +1,154 @@
+.boundary {
+  background-color: #333;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  align-items: center; }
+
+.mover {
+  margin: 0px;
+  text-align: center; }
+
+.trumpie-img {
+  width: 400px; }
+
+.title {
+  position: absolute;
+  z-index: 2;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase; }
+
+.trumpie {
+  background-color: yellow;
+  padding: 0 20px 0 20px; }
+
+.timer {
+  position: absolute;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  width: 100%;
+  text-align: center; }
+
+.counter {
+  margin: 10px;
+  color: white;
+  font-size: 40px; }
+
+.time-title {
+  background-color: yellow;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 32px;
+  padding: 10px; }
+
+.card-container {
+  margin-top: 11%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+  align-items: center;
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-flex-wrap: wrap;
+  /* Safari 6.1+ */
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid orange; }
+
+.card {
+  width: 40%;
+  height: 40%;
+  text-align: center; }
+
+.icons {
+  width: 50%;
+  height: auto; }
+
+.icons:hover, icons:focus {
+  opacity: 0.8; }
+
+button {
+  padding: 15px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  border-radius: none;
+  border: none;
+  font-size: 24px; }
+
+#start {
+  background-color: yellow; }
+
+#reset {
+  background-color: black;
+  color: white; }
+
+button:hover, button:focus {
+  opacity: 0.8; }
+
+.boom {
+  z-index: 10;
+  width: 800px; }
+
+.pop-up {
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  align-items: center; }
+
+.pop-up-text {
+  max-width: 400px;
+  width: 60%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px; }
