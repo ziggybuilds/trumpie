@@ -2,8 +2,13 @@
 <html>
 <head>
 	<title>TRUMP TIMED!</title>
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<meta property="og:url"                content="https://www.trumptimed.com/" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="TRUMP TIMED!" />
+<meta property="og:description"        content="How fast can Donald end the world?" />
+<meta property="og:image"              content="https://www.trumptimed.com/images/fb-share.png" />
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" rel="stylesheet">
 <link href="./style.css" rel="stylesheet">
@@ -42,44 +47,34 @@
     enable_page_level_ads: true
   });
 </script>
-<meta property="og:title" content="TRUMP TIMED!" />
-<meta property="og:type" content="Fun Game" />
-<meta property="og:url" content="https://www.trumptimed.com/" />
-<meta property="og:description" content="Just for fun! See how fast you can make things go boom... sorry this is not very nice." />
+</head>
 <body>
-	<div class="boundary">
-		<div class="mover" id="moveBox">
-			<img class="trumpie-img" src="./images/trumpie.png" alt="trumpie">
+<img class="hidden" src="./images/fb-share.png" alt="facebook-share-image">
+	<header>
+		<div class="title-div">
+			<h1 class="title"><span class="trumpie"><a href="https://www.trumptimed.com/">TRUMP TIMED!</a></span></h1>
 		</div>
-		<div class="title" id="gametitle">
-			<h1><span class="trumpie">TRUMP TIME!</span></h1>
-			<div class="pop-up-text">
-				<h3><span id="score"></span></h3>
-				<div class="share-icons">
-						<h4>
-							<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.trumptimed.com%2F" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a  class="twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.trumptimed.com%2F" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						</h4>
+		<div class="game">
+			<div class="controls">
+				<div class="time-div">
+					<p class="counter" id="counter"></p>
+				</div>
+				<div class="time-div">
+					<div>
+						<button id="start">Start</button>
+						<button id="reset">Reset</button>			
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="game">
-		<div class="timer">
-			<h3><span class="time-title">How fast can Trump destory it all?!</span></h3>
-			<p class="counter" id="counter"></p>
-			<button id="start">Start</button>
-			<!--<button id="stop">Stop</button>-->
-			<button id="reset">Reset</button>
-		</div>
-	</div>
+	</header>	
 	<div class="card-container">
 		
 			<div class="card" id="parentHouse">
 				<img dataGame="false" class="icons" id="whitehouse" src="./images/whitehouse.png" alt="whitehouse">
 			</div>
-			<div class="card" id="parentKorea">
-				<img dataGame="false" class="icons"  id="korea" src="./images/korea.png" alt="korea">
+			<div class="card" id="parentLiberty">
+				<img dataGame="false" class="icons"  id="liberty" src="./images/liberty.png" alt="korea">
 			</div>
 			<div class="card" id="parentEarth">
 				<img dataGame="false" class="icons" id="earth" src="./images/earth.png" alt="earth">
@@ -88,6 +83,20 @@
 				<img dataGame="false" class="icons"  id="flag" src="./images/flag.png" alt="flag">
 			</div>
 
+	</div>
+	<div class="boundary">
+		<div class="mover" id="moveBox">
+			<img class="trumpie-img" src="./images/trumpie.png" alt="trumpie">
+		</div>
+	</div>
+	<div class="pop-up-text" id="pop-up">
+		<h3><span id="score"></span></h3>
+		<div class="share-icons">
+				<h4>
+					<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.trumptimed.com%2F" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a  class="twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.trumptimed.com%2F" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				</h4>
+		</div>
 	</div>
 	<footer class="footer">
 		<div class="footer-text">
@@ -101,11 +110,15 @@
 			</div>
 		</div>
 		<div class="citations">
-			<p>Noun Project iscons courtesy of: white house by Alec Dhuse, North Korea Flag by Xinh Studio, United States Of America by anbileru adaleru, and Earth by Setyo Ari Wibowo. Donald Trump photo courtesy of Gage Skidmore Flickr.
+			<p>Noun Project icons courtesy of: white house by Alec Dhuse, Statue of Liberty by anbileru adaleru, United States Of America by anbileru adaleru, and Earth by Setyo Ari Wibowo. Donald Trump photo courtesy of Gage Skidmore Flickr.
+			</p>
+			<p>
+			This website is not sponsored by any party, organization, group, religion, or entity. I'm just a dog concerned about our future. All hail the flexbox.
 			</p>
 		</div>
 	</footer>
+<img class="hidden" src="./images/fb-share.png" alt="facebook-share-image">
+<img class="hidden" src="./images/back-min.jpeg" alt="back-img">
 <script type="text/javascript" src="./app.bundle.js"></script>
-
 </body>
 </html>

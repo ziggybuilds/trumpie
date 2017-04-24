@@ -6,11 +6,189 @@ body {
   font-family: sans-serif;
   font-size: 16px;
   background-color: #333;
-  margin: 0; }
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://www.trumptimed.com/images/back-min.jpeg"); }
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 12px; } }
+
+header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
+  align-content: center;
+  background-color: #fff;
+  height: 5em;
+  border-bottom: 4px solid #17B8EB; }
+  @media screen and (max-width: 768px) {
+    header {
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 8em; } }
+  header .title-div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center;
+    width: 50%; }
+    @media screen and (max-width: 768px) {
+      header .title-div {
+        width: 100%; } }
+    header .title-div .title {
+      width: 100%;
+      text-align: center;
+      font-size: 3em;
+      -webkit-transition: 0.2s ease-in;
+      -moz-transition: 0.2s ease-in;
+      -ms-transition: 0.2s ease-in;
+      -o-transition: 0.2s ease-in;
+      transition: 0.2s ease-in; }
+      header .title-div .title a {
+        color: #E5003F;
+        text-decoration: none; }
+        header .title-div .title a:visited {
+          color: #E5003F; }
+        header .title-div .title a:hover, header .title-div .title a:focus {
+          color: #17B8EB; }
+  header .game {
+    width: 50%;
+    display: inline-block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center; }
+    @media screen and (max-width: 768px) {
+      header .game {
+        width: 100%; } }
+    header .game .controls {
+      width: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center; }
+      header .game .controls button {
+        -webkit-border-radius: 1em;
+        -moz-border-radius: 1em;
+        -ms-border-radius: 1em;
+        border-radius: 1em;
+        border: solid 2px #E5003F;
+        color: #E5003F;
+        background-color: transparent;
+        height: 2.2em;
+        margin: 0 .1em 0 .1em;
+        padding: .2em .5em .2em .5em;
+        -webkit-transition: 0.2s ease-in;
+        -moz-transition: 0.2s ease-in;
+        -ms-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        transition: 0.2s ease-in; }
+        @media screen and (max-width: 768px) {
+          header .game .controls button {
+            display: inline-block; } }
+        header .game .controls button:hover, header .game .controls button:focus {
+          color: #17B8EB;
+          border: solid 2px #17B8EB; }
+      @media screen and (max-width: 768px) {
+        header .game .controls #start {
+          display: none; } }
+    header .game .time-div {
+      width: 50%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      -webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center; }
+      header .game .time-div .counter {
+        text-align: right;
+        font-size: 2em;
+        color: #E5003F;
+        margin-right: .4em; }
+
+button {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  border-radius: none;
+  border: none;
+  font-size: 1.4em; }
 
 .boundary {
   width: 100%;
   height: 100vh;
+  min-height: 300px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -31,58 +209,28 @@ body {
   align-items: center;
   -webkit-box-shadow: 0px 10px 19px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 19px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 10px 19px -4px rgba(0, 0, 0, 0.75);
-  padding-bottom: 2em; }
+  box-shadow: 0px 10px 19px -4px rgba(0, 0, 0, 0.75); }
 
 .mover {
   margin: 0px;
-  text-align: center; }
+  text-align: center;
+  max-width: 300px;
+  width: 90%; }
 
 .trumpie-img {
-  width: 400px; }
-
-.title {
-  position: absolute;
-  z-index: 2;
-  color: black;
-  text-align: center;
-  font-size: 40px;
-  font-family: sans-serif;
-  text-transform: uppercase; }
-
-.trumpie {
-  background-color: yellow;
-  padding: 0 20px 0 20px; }
-
-.timer {
-  position: absolute;
-  z-index: 5;
-  margin-left: auto;
-  margin-right: auto;
-  top: 0;
   width: 100%;
-  text-align: center; }
-
-.counter {
-  margin: 10px;
-  color: white;
-  font-size: 40px; }
-
-.time-title {
-  background-color: yellow;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 32px;
-  padding: 10px; }
+  height: auto;
+  opacity: 0.6;
+  filter: alpha(opacity=60); }
 
 .card-container {
-  margin-top: 11%;
   position: absolute;
-  z-index: 10;
-  top: 0;
+  z-index: 2;
+  top: 5em;
   left: 0;
   width: 100%;
   height: 80vh;
+  min-height: 400px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -105,15 +253,26 @@ body {
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  @media screen and (max-width: 768px) {
+    .card-container {
+      top: 8em;
+      width: 95%;
+      height: 90vh;
+      margin-left: auto;
+      margin-right: auto; } }
 
 .card {
-  width: 40%;
+  width: 50%;
   height: 40%;
   text-align: center; }
 
 .icons {
-  width: 50%;
+  width: 100%;
+  max-width: 400px;
   height: auto; }
+  @media screen and (max-width: 768px) {
+    .icons {
+      max-width: 100px; } }
 
 .icons:hover, icons:focus {
   opacity: 0.6;
@@ -124,63 +283,40 @@ body {
   -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in; }
 
-button {
-  padding: 15px;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  border-radius: none;
-  border: none;
-  font-size: 24px; }
-
-#start {
-  background-color: yellow; }
-
-#reset {
-  background-color: black;
-  color: white; }
-
-button:hover, button:focus {
-  -webkit-transition: 0.4s ease-in;
-  -moz-transition: 0.4s ease-in;
-  -ms-transition: 0.4s ease-in;
-  -o-transition: 0.4s ease-in;
-  transition: 0.4s ease-in; }
-
-.boom {
-  z-index: 10; }
+.share-icons a {
+  color: #E5003F;
+  font-size: 2em;
+  padding: .5em; }
+  .share-icons a:hover, .share-icons a:focus {
+    color: #17B8EB;
+    -webkit-transition: 0.4s ease-in;
+    -moz-transition: 0.4s ease-in;
+    -ms-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in; }
 
 .pop-up-text {
-  width: 60%;
+  position: absolute;
+  z-index: 5;
+  top: 12em;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  text-align: center;
+  width: 100%; }
   .pop-up-text #score {
-    margin: 10px 0 10px 0;
-    text-align: left;
-    background-color: yellow;
-    padding: 5px; }
-  .pop-up-text button {
-    margin: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border-radius: 10px; }
+    background-color: white;
+    color: #E5003F;
+    font-size: 3em; }
 
-.share-icons {
-  color: #fff; }
-  .share-icons a {
-    color: #fff;
-    padding: .5em; }
-    .share-icons a:hover, .share-icons a:focus {
-      color: yellow;
-      -webkit-transition: 0.4s ease-in;
-      -moz-transition: 0.4s ease-in;
-      -ms-transition: 0.4s ease-in;
-      -o-transition: 0.4s ease-in;
-      transition: 0.4s ease-in; }
+.boom {
+  width: 100%;
+  height: auto;
+  max-width: 300px; }
 
 footer {
-  color: white;
+  color: #17B8EB;
   padding: 4em;
+  background-color: #fff;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -199,11 +335,23 @@ footer {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    footer {
+      padding: 2em; } }
   footer .footer-text {
     text-align: center;
     max-width: 600px;
     width: 60%; }
+    @media screen and (max-width: 768px) {
+      footer .footer-text {
+        width: 90%; } }
   footer .citations {
     font-size: 10px;
     max-width: 600px;
     width: 60%; }
+    @media screen and (max-width: 768px) {
+      footer .citations {
+        width: 90%; } }
+
+.hidden {
+  display: none; }

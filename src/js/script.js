@@ -23,18 +23,18 @@ function mouseMover(e) {
 
 		if (x < width ) {
     		var shiftX = (100 / width) * 2 * x;
-    		box.style.marginRight = shiftX + "px";
+    		box.style.paddingRight = shiftX + "px";
 		} else if (x > width ) {
 			var shiftX = (-100 / width) * 2 * x;
-			box.style.marginLeft = shiftX + "px";
+			box.style.paddingLeft = shiftX + "px";
 		}
 
 		if (y < height ) {
 		var shiftY = (100 / height) * y;
-		box.style.marginBottom = shiftY + "px";
+		box.style.paddingBottom = shiftY + "px";
 		} else if (y > height ) {
 			var shiftY = (-100 / height) * y;
-			box.style.marginTop = shiftY + "px";
+			box.style.paddingTop = shiftY + "px";
 		}
 }
 
@@ -127,12 +127,12 @@ resetBtn.addEventListener('click', (e) => {
 
 
 const house = document.querySelector('#whitehouse');
-const korea = document.querySelector('#korea');
+const liberty = document.querySelector('#liberty');
 const flag = document.querySelector('#flag');
 const earth = document.querySelector('#earth');
 
 const parenthouse = document.querySelector('#parentHouse');
-const parentkorea = document.querySelector('#parentKorea');
+const parentLiberty = document.querySelector('#parentLiberty');
 const parentflag = document.querySelector('#parentFlag');
 const parentearth = document.querySelector('#parentEarth');
 
@@ -142,24 +142,24 @@ boom.setAttribute("class", "boom");
 
 const done = document.createElement("img");
 done.src = "./images/done.png";
-done.setAttribute("class", "done");
+done.setAttribute("class", "boom");
 
     house.addEventListener('click', (e) => {
         timer.start();
        if(house.hasAttribute("datagame")) {
         house.setAttribute("datagame", "true");
         }
-        parentHouse.appendChild(boom);
+        parentHouse.appendChild(done);
         house.style.display = "none";
         gameOver();
     });
-    korea.addEventListener('click', (e) => {
+    liberty.addEventListener('click', (e) => {
         timer.start();
-        if(korea.hasAttribute("datagame")) {
-        korea.setAttribute("datagame", "true");
+        if(liberty.hasAttribute("datagame")) {
+        liberty.setAttribute("datagame", "true");
         }
-        parentKorea.appendChild(boom);
-        korea.style.display = "none";
+        parentLiberty.appendChild(done);
+        liberty.style.display = "none";
         gameOver();
     });
     earth.addEventListener('click', (e) => {
@@ -176,7 +176,7 @@ done.setAttribute("class", "done");
         if(flag.hasAttribute("datagame")) {
         flag.setAttribute("datagame", "true");
         }
-        parentFlag.appendChild(boom);
+        parentFlag.appendChild(done);
         flag.style.display = "none";
         gameOver();
     });
@@ -184,7 +184,7 @@ done.setAttribute("class", "done");
 function gameOver() {
     if( 
         house.getAttribute("datagame") == "true" &&
-        korea.getAttribute("datagame") == "true" &&
+        liberty.getAttribute("datagame") == "true" &&
         flag.getAttribute("datagame") == "true" &&
         earth.getAttribute("datagame") == "true"
      ) {
@@ -196,19 +196,20 @@ function gameOver() {
 //// Function to dispaly gameover pop-up
 const score = document.querySelector("#score");
 const title = document.querySelector("#gametitle");
-const pop = document.querySelector(".pop-up-text");
+const pop = document.querySelector("#pop-up");
 document.addEventListener('DOMContentLoaded', (e) => {
     pop.style.display = "none";
 });
 
 function endMessage() {
     let time = document.querySelector("#counter").textContent;
-    title.style.zIndex = '12';    
     score.textContent = "Congrats! Donald destroyed the world in: " + counter.textContent;
 
     setTimeout(function() {
         pop.style.display = "block";
     }, 500);
+
+    console.log("completed");
 }
 
 
